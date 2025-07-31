@@ -32,7 +32,7 @@ node* buildtree(vector<int>preorder){
     return root;
 }
 
-void topView(node* root,int k){
+void topView(node* root){
 
     if(root==NULL){
         return ;
@@ -70,9 +70,9 @@ int main(){
 
     vector<int>preorder1={1,2,-1,-1,3,4,-1,-1,5,-1,-1};
     node* root=buildtree(preorder1);
-    int k=3;
+    // int k=3;
 
-    topView(root,k);
+    topView(root);
     
     return 0;
 }
